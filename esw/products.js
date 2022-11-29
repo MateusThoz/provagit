@@ -28,7 +28,20 @@ function listar() {
     produtos.forEach(p => {
         console.log(p)
     })
+
 }
+function listarPorCategoria(escolha) 
+{ for (let i = 0; i < produtos.length; i++) 
+    { 
+        if (produtos[i].categoria == escolha) 
+        {
+             console.log(produtos[i]); 
+        } 
+    }
+ } 
+ let escolha = 'Escolar';
+  listarPorCategoria(escolar);
+
 
 
 
