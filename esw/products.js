@@ -42,6 +42,16 @@ function listarPorCategoria(escolha)
  let escolha = 'Escolar';
   listarPorCategoria(escolar);
 
-
+  function listarPorValor(minValor, maxValor) {
+    for (let i = 0; i < produtos.length; i++) {
+      if (produtos[i].valor < minValor && produtos[i].valor > maxValor) {
+        continue;
+      } else if (produtos[i].valor >= minValor && produtos[i].valor <= maxValor) {
+        console.log(produtos[i]);
+      }
+    }
+  }
+  
+  listarPorValor(1, 1000);
 
 
